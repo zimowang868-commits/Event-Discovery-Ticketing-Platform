@@ -1,0 +1,16 @@
+runtime: nodejs20
+env: standard
+automatic_scaling:
+  min_instances: 1
+  max_instances: 4
+  target_cpu_utilization: 0.6
+
+env_variables:
+  NODE_ENV: "production"
+  TM_API_KEY: "your_tm_api_key_here"
+  GOOGLE_MAPS_KEY: "your_google_maps_key_here"
+  SPOTIFY_CLIENT_ID: "your_spotify_client_id_here"
+  SPOTIFY_CLIENT_SECRET: "your_spotify_client_secret_here"
+  MONGODB_URI: "your_mongodb_uri_here"
+  MONGODB_DB: "your_database_name_here"
+  MONGODB_COLL: "your_collection_name_here"
